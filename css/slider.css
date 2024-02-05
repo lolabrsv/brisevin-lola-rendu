@@ -1,0 +1,56 @@
+.swiper-slide {
+  height: 60vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 10px;
+  background: #ff8b8b;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  padding-left: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.slide-co {
+  background-image: url(https://www.google.com/https://assets-global.website-files.com/62b397ed0ff18cefd722ad0c/62e81ca0304e5174b6fa0d78_coding_for_business.jpg?sa=i&url=https%3A%2F%2Fstudyworkgrow.com.au%2F2023%2F04%2F20%2F5-work-experience-ideas-for-students-interested-in-coding%2F&psig=AOvVaw2wMQXRWkjhF_tJ1TCv44-w&ust=1706798423877000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMi82d_th4QDFQAAAAAdAAAAABAO);
+  background-size: cover;
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 24px;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 72px;
+  color: white;
+  text-transform: lowercase;
+}
+
+body .swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+}
+
+body .swiper-pagination-bullet-active {
+  background: orangered;
+}
+
+body .swiper-button-next,
+body .swiper-button-prev {
+  color: orangered;
+}

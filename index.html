@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css"
+    />
+    <link rel="stylesheet" href="css/portfolio.css" />
+
+    <title>Formulaire</title>
+  </head>
+
+  <body>
+    <button id="theme">Dark mode</button>
+    <div class="message-error">
+      <ul></ul>
+    </div>
+
+    <header>
+      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+      <script src="js/slider.js"></script>
+
+      <div class="swiper mon-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide-dw">
+            <p class="subtitle">Axe Métier</p>
+            <p class="title">Axe développement web</p>
+          </div>
+          <div class="swiper-slide slide-cd">
+            <p class="subtitle">Axe Métier</p>
+            <p class="title">Axe création & design</p>
+          </div>
+          <div class="swiper-slide slide-cdeb">
+            <p class="subtitle">Axe Métier</p>
+            <p class="title">Axe com' digital</p>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simplelightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"></script>
+
+    <main class="portfolio">
+      <div class="filters">
+        <ul>
+          <li data-filter="all" class="active">Tous les projets</li>
+          <li data-filter="cd">Création & design</li>
+          <li data-filter="cdeb">Com' Digitale</li>
+          <li data-filter="dw">Développement web</li>
+          <li data-filter="3d">Animation 3d</li>
+          <li data-filter="jv">Jeux vidéo</li>
+        </ul>
+      </div>
+
+      <div class="portfolio-elements">
+        <div class="card filtr-item" data-category="cd">
+          <div class="card-header">
+            <p class="card-title">Moodboard</p>
+            <div class="card-axe">Création Design</div>
+          </div>
+          <a href="mooboardimstar.png">
+            <img src="mooboardimstar.png" alt="Moodboard" />
+          </a>
+        </div>
+
+        <div class="card filtr-item" data-category="3d">
+          <div class="card-header">
+            <p class="card-title">Modélisation de Bart</p>
+            <div class="card-axe">Animation 3D</div>
+          </div>
+          <a href="bart3D.png">
+            <img src="bart3D.png" alt="Animation3D" />
+          </a>
+        </div>
+
+        <div class="card filtr-item" data-category="dw">
+          <div class="card-header">
+            <p class="card-title">Coding</p>
+            <div class="card-axe">Developpement web</div>
+          </div>
+          <a href="developpeur-web.webp">
+            <img src="developpeur-web.webp" alt="DeveloppementWeb" />
+          </a>
+        </div>
+
+        <div class="card filtr-item" data-category="jv">
+          <div class="card-header">
+            <p class="card-title">Character</p>
+            <div class="card-axe">Jeu Vidéo</div>
+          </div>
+          <a href="meï dessin.png">
+            <img src="meï dessin.png" alt="Jeu Vidéo" />
+          </a>
+        </div>
+
+        <div class="card filtr-item" data-category="cdeb">
+          <div class="card-header">
+            <p class="card-title">Graphique</p>
+            <div class="card-axe">Communication et marketing digitale</div>
+          </div>
+          <a href="shema cdeb.jpeg">
+            <img src="shema cdeb.jpeg" alt="cdeb" />
+          </a>
+        </div>
+      </div>
+
+      <div class="message-success">
+        <h1>Votre formulaire a bien été envoyé</h1>
+      </div>
+
+      <form id="formulaire">
+        <div>
+          <label for="nom">Nom</label>
+          <input type="text" name="nom" id="nom" />
+        </div>
+        <div>
+          <label for="prenom">Prénom</label>
+          <input type="text" name="prenom" id="prenom" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="password">Mot de passe</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div>
+          <label for="password2">Mot de passe 2</label>
+          <input type="password" name="password2" id="password2" />
+        </div>
+
+        <div>
+          <label for="radios">Seconde :</label>
+          <input type="radio" name="radios" id="radio1" value="radio1" />
+          <label for="radio1">Première :</label>
+          <input type="radio" name="radios" id="radio2" value="radio2" />
+          <label for="radio2">Terminale :</label>
+          <input type="radio" name="radios" id="radio3" value="radio3" />
+        </div>
+        <div>
+          <label for="axe">Mon axe :</label>
+          <select name="axe" id="axe">
+            <option value="">Choisir mon axe</option>
+            <option value="axe1">Jeu Vidéo</option>
+            <option value="axe2">Coding</option>
+            <option value="axe3">3D</option>
+          </select>
+        </div>
+        <button type="submit">S'inscrire</button>
+      </form>
+      <script src="js/portfolio.js"></script>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
